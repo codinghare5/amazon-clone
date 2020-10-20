@@ -1,4 +1,3 @@
-import { auth } from 'firebase';
 import React, { useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import './Login.css';
@@ -64,7 +63,7 @@ function Login() {
                     By signing-in you agree to the AMAZON FAKE CLONE Conditions of Use & Sale.
                     Please see our Privacy Notice, our Cookies Notice and our Intrest-Based Ads Notice.
                 </p>
-                <button className="login__registerButton">Create your Amazon account</button>
+                <button type="submit" onClick={register} className="login__registerButton">Create your Amazon account</button>
             </div>
         </div>
     )
